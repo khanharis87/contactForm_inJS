@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>	
+
+<html>
+	<head>
+		<title>Contacts</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+	<body>
+		<div id='container-contact'>
+			<div class='general-info'>
+				<section class='contact-us'>
+				
+					<h3>Contact us</h3>
+					
+					<ul>
+						<li><a href='mailto:info@competa.com'>info@competa.com</a></li>
+
+						<li><a href='tel:0031704277555'>+31 (0)70 42 77 555</a></li>
+
+						<li>Verrijn Stuartlaan 20, 2288 EL, Rijswijk(ZH)<br>Netherlands</li>
+					</ul>
+				</section>
+
+				<section class='contact-form'>
+					<h3>Contact form </h3>
+
+					                <form action="MAILTO:haris.khan87@gmail.com"  method='post' name ='formSection'  id="contact-form">
+
+                    <div>
+                        <label for='name'>Name:</label>
+                        <input  class="errorcheck" type='text'  id='name' name='user_name' maxlength="25">
+                        <p  class="error" id="error-name"></p>
+                    </div>
+
+                    <div>
+                        <label for='email'>Email:</label>
+                        <input  class="errorcheck" type='email' id='email' name='user_email'>
+                        <p  class="error" id="error-email"></p>
+                    </div>
+                    
+                    <div>   
+                        <label for='tel'>Telephone:</label>
+                        <input type='tel' id='tel' name='urstel'>
+                        <p class = "error"id="error-tel"></p>
+                    </div>
+
+                    <div>
+                        <label for='msg'>Message:</label>
+                        <textarea id='msg'  class="errorcheck"></textarea>
+                        <p class="error" id="error-msg"></p>
+                    </div>
+
+                    <div class="button">
+                        <button id="formSubmit" type="submit">Send</button>
+                     </div>
+
+                    </form>
+					<script src="javascript.js"></script>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
